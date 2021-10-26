@@ -1,0 +1,60 @@
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  color: #0062d1;
+}
+
+.pagination span {
+  display: block;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.pagination li {
+  list-style: none;
+}
+
+.pagination div {
+  display: flex;
+  justify-content: space-around;
+  background: #fff;
+  padding: 0 10px;
+  border-radius: 50px;
+  margin-right: 15px;
+}
+
+.pagination div li {
+  padding: 8px;
+}
+
+.pageNav {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background: #fff;
+  margin-right: 15px;
+}
+
+.prevPage img {
+  transform: rotate(90deg);
+  padding: 10px;
+}
+
+.nextPage img {
+  transform: rotate(-90deg);
+  padding: 10px;
+}
+
+.activePage {
+  background: #0062d1;
+  color: #fff;
+  border-radius: 50px;
+}
+
+.hide {
+  display: none;
+}

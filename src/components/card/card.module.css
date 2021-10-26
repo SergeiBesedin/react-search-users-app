@@ -1,0 +1,12 @@
+.card {
+  border: none;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.card a {
+  color: #fff;
+  border-radius: 30px;
+  background: #ffa621;
+  padding: 10px;
+}

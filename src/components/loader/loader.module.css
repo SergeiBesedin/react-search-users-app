@@ -1,0 +1,11 @@
+.loader {
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader > div {
+  width: 10rem;
+  height: 10rem;
+}

@@ -1,0 +1,24 @@
+.repos {
+  padding: 0;
+}
+
+.repos li {
+  list-style: none;
+  border-bottom: 2px solid #fff;
+  padding: 10px 0;
+  transition-duration: 1s;
+}
+
+.repos a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.repos li:hover {
+  background: #ffa621;
+  border-radius: 20px;
+  padding: 10px;
+}

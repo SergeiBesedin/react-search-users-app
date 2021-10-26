@@ -1,0 +1,17 @@
+.alert {
+  display: flex;
+  align-items: center;
+  border-radius: 40px;
+  max-width: 400px;
+  background: #ee5858;
+  color: #fff;
+  padding: 10px;
+}
+
+.alert img {
+  margin-right: 5px;
+}
+
+.alert span {
+  margin-right: 5px;
+}

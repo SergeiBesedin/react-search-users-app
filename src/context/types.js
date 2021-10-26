@@ -1,0 +1,9 @@
+export const SHOW_ALERT = "SHOW_ALERT";
+export const HIDE_ALERT = "HIDE_ALERT";
+export const CLEAR_USERS = "CLEAR_USERS";
+export const SET_USERNAME = "SET_USERNAME";
+export const SET_USERS = "SET_USERS";
+export const SET_LOADING = "SET_LOADING";
+export const SET_CURRENT_PAGE = "SET_CURRENT_PAGE";
+export const GET_USER = "GET_USER";
+export const GET_REPOS = "GET_REPOS";
