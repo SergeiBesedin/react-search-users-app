@@ -15,12 +15,14 @@ export const Pagination = () => {
 
   useEffect(() => {
     fetchUsers();
+    // eslint-disable-next-line
   }, [currentPage]);
 
   const [index, setIndex] = useState({ startIndex: 0, endIndex: 5 });
 
   useEffect(() => {
     setIndex({ startIndex: 0, endIndex: 5 });
+    // eslint-disable-next-line
   }, [username]);
 
   const totalPages = Math.ceil(totalCountUsers / usersPerPage);

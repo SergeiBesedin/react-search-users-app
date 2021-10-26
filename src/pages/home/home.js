@@ -19,6 +19,7 @@ export const Home = () => {
       usersRef.current.scrollIntoView();
     };
     setTimeout(scrollToRef, 500);
+    // eslint-disable-next-line
   }, [users]);
 
   return (

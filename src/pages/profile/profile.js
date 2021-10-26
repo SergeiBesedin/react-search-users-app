@@ -17,6 +17,7 @@ export const Profile = ({ match }) => {
   useEffect(() => {
     getUser(userName);
     getRepos(userName);
+    // eslint-disable-next-line
   }, []);
 
   const {
@@ -48,7 +49,7 @@ export const Profile = ({ match }) => {
             className={`${classes.cardItem} col-md-4 col-sm-4 card align-items-center`}
           >
             <img src={avatar_url} alt={name} />
-            <a href={html_url} target="_blank">
+            <a href={html_url} target="_blank" rel="noreferrer">
               Перейти в профиль GitHub
             </a>
             <div>

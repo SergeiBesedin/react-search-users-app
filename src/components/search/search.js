@@ -37,6 +37,7 @@ export const Search = () => {
     } else {
       users.length === 0 && show("Такого пользователя не существует");
     }
+    // eslint-disable-next-line
   }, [users]);
 
   const inputRef = useRef();
