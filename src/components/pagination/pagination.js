@@ -1,7 +1,7 @@
-import React, { useContext, useState, useEffect } from "react";
-import { GithubContext } from "../../context/github/github-context";
-import classes from "./pagination.module.css";
-import arrow from "../../assets/blueArrow.png";
+import React, { useContext, useState, useEffect } from 'react';
+import { GithubContext } from '../../context/github/github-context';
+import classes from './pagination.module.css';
+import arrow from '../../assets/blueArrow.png';
 
 export const Pagination = () => {
   const {
@@ -65,7 +65,7 @@ export const Pagination = () => {
   return (
     <nav>
       <ul className={classes.pagination}>
-        <li className={clsPrevPage.join(" ")}>
+        <li className={clsPrevPage.join(' ')}>
           <span onClick={() => paginate(currentPage - 1)}>
             <img src={arrow} alt="arrowIcon" />
           </span>
@@ -84,7 +84,7 @@ export const Pagination = () => {
             );
           })}
         </div>
-        <li className={clsNextPage.join(" ")}>
+        <li className={clsNextPage.join(' ')}>
           <span onClick={() => paginate(currentPage + 1)}>
             <img src={arrow} alt="arrowIcon" />
           </span>

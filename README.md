@@ -1,4 +1,4 @@
-# Github Users App
+# GitHub Users App
 
 Home project that allows you to search for GitHub users by name, view information about them, their repositories.
 The project uses the GitHub API: https://docs.github.com/en/rest/reference/activity.

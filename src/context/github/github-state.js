@@ -1,5 +1,5 @@
-import React, { useReducer } from "react";
-import axios from "axios";
+import React, { useReducer } from 'react';
+import axios from 'axios';
 import {
   GET_USER,
   GET_REPOS,
@@ -8,16 +8,16 @@ import {
   SET_LOADING,
   SET_USERNAME,
   SET_CURRENT_PAGE,
-} from "../types";
-import { GithubContext } from "./github-context";
-import { githubReducer } from "./github-reducer";
+} from '../types';
+import { GithubContext } from './github-context';
+import { githubReducer } from './github-reducer';
 
 const CLIENT_ID = process.env.REACT_APP_CLIENT_ID;
 const CLIENT_SECRET = process.env.REACT_APP_CLIENT_SECRET;
 
 export const GithubState = ({ children }) => {
   const initialState = {
-    username: "",
+    username: '',
     user: {},
     users: [],
     totalCountUsers: 0,
@@ -91,35 +91,19 @@ export const GithubState = ({ children }) => {
 
   const setLoading = () => dispatch({ type: SET_LOADING });
 
-  const {
-    username,
-    user,
-    users,
-    totalCountUsers,
-    repos,
-    loading,
-    usersPerPage,
-    currentPage,
-  } = state;
+  const { username, usersPerPage, currentPage } = state;
 
   return (
     <GithubContext.Provider
       value={{
+        ...state,
         setLoading,
+        fetchUsers,
         setUsername,
         setCurrentPage,
-        fetchUsers,
         getUser,
         getRepos,
         clearUsers,
-        username,
-        user,
-        users,
-        totalCountUsers,
-        repos,
-        loading,
-        usersPerPage,
-        currentPage,
       }}
     >
       {children}

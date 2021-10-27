@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
-import classes from "./scrollspy.module.css";
-import arrow from "../../assets/whiteArrow.png";
+import React, { useState, useEffect } from 'react';
+import classes from './scrollspy.module.css';
+import arrow from '../../assets/whiteArrow.png';
 
 export const Scrollspy = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -11,16 +11,16 @@ export const Scrollspy = () => {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
-  const scrollVisible = { display: "none" };
+  const scrollVisible = { bottom: '-50px' };
 
   if (scrollPosition > 900) {
-    scrollVisible.display = "block";
+    scrollVisible.bottom = '20px';
   }
 
   const scrollUp = () => {

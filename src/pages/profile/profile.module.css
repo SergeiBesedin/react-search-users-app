@@ -62,8 +62,8 @@
 }
 
 .toMainLink {
-  margin-left: 20px;
-  max-width: 190px;
+  display: inline-block;
+  margin-left: 25px;
   padding: 4px 0;
   border-bottom: 1px solid #fff;
   opacity: 0.6;
